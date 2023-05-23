@@ -1,0 +1,9 @@
+# local package
+-e .
+
+# external requirements
+pytest
+pre-commit
+black
+pylint
+pandas
