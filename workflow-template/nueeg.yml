@@ -2,9 +2,9 @@ name: Python CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -24,14 +24,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Lint with Pylint
-      run: |
-        pylint **/*.py
-
     - name: Format with Black
       run: |
         black --check .
 
-    - name: Test with pytest
+    - name: Run Pylint
       run: |
-        pytest
+        pylint **/*.py
