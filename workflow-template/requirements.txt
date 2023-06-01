@@ -1,6 +1,7 @@
-pytest 
-pre-commit> 3.0.0
-black>23.3.0
+utils
+pytest
+pre-commit
+black
 pylint>2.0.0
-pandas>1.4.0
-python-utils>3.0.0
+pandas
+python-utils
