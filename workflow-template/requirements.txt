@@ -1,7 +1,0 @@
-utils
-pytest
-pre-commit
-black
-pylint>2.0.0
-pandas
-python-utils
